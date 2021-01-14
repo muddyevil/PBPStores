@@ -1,0 +1,272 @@
+<!doctype html>
+
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>A&M General Stores</title>
+<style>
+
+    input {
+        display: none;
+    }
+
+    label {
+    display: block;    
+    padding: 8px 22px;
+    margin: 0 0 1px 0;
+    cursor: pointer;
+    background: #6AAB95;
+    border-radius: 3px;
+    color: #FFF;
+    transition: ease .5s;
+    }
+
+    label:hover {
+    background: #4E8774;
+    }
+
+    .content {
+    background: #E2E5F6;
+    padding: 10px 25px;
+    border: 1px solid #A7A7A7;
+    margin: 0 0 1px 0;
+    border-radius: 3px;
+    }
+
+    input + label + .content {
+    display: none;
+    }
+
+    input:checked + label + .content {
+    display: block;
+    }
+
+</style>
+</head>
+
+<body>
+    <input type="checkbox" id="general">
+    <label for="general">General Adventuring</label>
+    
+    <div class="content">
+        <div class="item">
+            <h3>Blanket</h3>
+            <h4>5sp</h4>
+            <p>For keeping you warm and comfy</p>
+        </div>
+        <div class="item">
+            <h3>Climber's Kit</h3>
+            <h4>25gp</h4>
+            <p>A climber’s kit includes Special pitons, boot tips, gloves, and a harness. You can use the climber’s kit as an action to anchor yourself; when you do, you can’t fall more than 25 feet from the point where you anchored yourself, and you can’t climb more than 25 feet away from that point without undoing the anchor.</p>
+        </div>
+        <div class="item">
+            <h3>Magnifying Glass</h3>
+            <h4>50gp</h4>
+            <p>This lens allows a closer look at small Objects. It is also useful as a substitute for flint and steel when starting fires. Lighting a fire with a magnifying glass requires light as bright as sunlight to focus, tinder to Ignite, and about 5 minutes for the fire to Ignite. A magnifying glass grants advantage on any ability check made to appraise or inspect an item that is small or highly detailed.</p>
+        </div>
+    </div>
+
+    <input type="checkbox" id="weapons" />
+    <label for="weapons">Weapons</label>
+
+    <div class="content">
+        <div class="item">
+            <h3>Bob</h3>
+            <h4>15gp</h4>
+            <p>This +1 battleaxe floats on water and other liquids, and grants its bearer advantage on Strength (Athletics) checks made to swim.</p>
+        </div>
+        <div class="item">
+            <h3>Vicious Pistol</h3>
+            <h4>400gp</h4>
+            <p>When you roll a 20 with this magic weapon, the target takes an extra 2d6 piercing damage.</p>
+        </div>
+        <div class="item">
+            <h3>Vicious Sling</h3>
+            <h4>400gp</h4>
+            <p>You have a +1 bonus to attack and damage rolls made with this weapon.
+            <br>
+            When you roll a 20 with this magic weapon, the target takes an extra 2d6 bludgeoning damage.</p>
+        </div>
+    </div>
+
+    <input type="checkbox" id="magicks" />
+    <label for="magicks">Magicks</label>
+
+    <div class="content">
+        <div class="item">
+            <h3>Astromancy Archive</h3>
+            <h4>6,000gp</h4>
+            <p>This brass disc of articulated, concentric rings unfolds into an armillary sphere. As a bonus action, you can unfold it into the sphere or back into a disc. When found, it contains the following spells, which are wizard spells for you while you are attuned to it: augury, divination, find the path, foresight, locate creature, and locate object. It functions as a spellbook for you, with spells encoded on the rings.<br>
+                <br>
+                While you are holding the archive, you can use it as a spellcasting focus for your wizard spells.<br>
+                <br>
+                The archive has 3 charges, and it regains 1d3 expended charges daily at dawn. You can use the charges in the following ways while holding it:<br>
+                <br>
+                <ul>
+                <li>If you spend 1 minute studying the archive, you can expend 1 charge to replace one of your prepared wizard spells with a different spell in the archive. The new spell must be of the divination school.</li>
+                <li>When a creature you can see within 30 feet of you makes an attack roll, an ability check, or a saving throw, you can use your reaction to expend 1 charge and force the creature to roll a d4 and apply the number rolled as a bonus or penalty (your choice) to the original roll. You can do this after you see the roll but before its effects are applied.</li>
+                </ul>
+            </p>
+        </div>
+        <div class="item">
+            <h3>Duplicitous Manuscript</h3>
+            <h4>2,000gp</h4>
+            <p>
+                To you, this book is a magical spellbook. To anyone else, the book appears to be a volume of verbose romance fiction. As an action, you can change the book's appearance and alter the plot of the romance.<br>
+                <br>
+                When found, the book contains the following spells: hallucinatory terrain, major image, mirror image, mislead, Nystul's magic aura, phantasmal force, and silent image. It functions as a spellbook for you.<br>
+                <br>
+                While you are holding the book, you can use it as a spellcasting focus for your wizard spells.<br>
+                <br>                
+                The book has 3 charges, and it regains 1d3 expended charges daily at dawn. You can use the charges in the following ways while holding it:<br>
+                <br>
+                <ul>
+                <li>If you spend 1 minute studying the book, you can expend 1 charge to replace one of your prepared wizard spells with a different spell in the book. The new spell must be of the illusion school.</li>
+                <li>When a creature you can see makes an Intelligence (Investigation) check to discern the true nature of an illusion spell you cast, or makes a saving throw against an illusion spell you cast, you can use your reaction and expend 1 charge to impose disadvantage on the roll.</li>
+                </ul>
+            </p>
+        </div>
+        <div class="item">
+            <h3>Fernian Ash Wand</h3>
+            <h4>20gp</h4>
+            <p>
+                An imbued wood focus is a rod, staff, or wand cut from a tree infused with extraplanar energy. If you're a spellcaster, you can use this item as a spellcasting focus.
+                <br>
+                When you cast a damage-dealing spell using this item as your spellcasting focus, you gain a +1 bonus to one fire damage roll of the spell.
+                <br>
+                An arcane focus is a special item designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus.</p>
+        </div>
+    </div>
+
+    <input type="checkbox" id="clothing" />
+    <label for="clothing">Clothing</label>
+
+    <div class="content">
+        <div class="item">
+            <h3>Robe of Stars</h3>
+            <h4>20,000gp</h4>
+            <p>This black or dark blue robe is embroidered with small white or silver stars. You gain a +1 bonus to saving throws while you wear it.
+                <br>
+                Six stars, located on the robe's upper front portion, are particularly large. While wearing this robe, you can use an action to pull off one of the stars and use it to cast magic missile as a 5th-level spell. Daily at dusk, 1d6 removed stars reappear on the robe.
+                <br>
+                While you wear the robe, you can use an action to enter the Astral Plane along with everything you are wearing and carrying. You remain there until you use an action to return to the plane you were on. You reappear in the last space you occupied, or if that space is occupied, the nearest unoccupied space.</p>
+        </div>
+
+        <div class="item">
+            <h3>Eyes of Minute Seeing</h3>
+            <h4>400gp</h4>
+            <p>These crystal lenses fit over the eyes. While wearing them, you can see much better than normal out to a range of 1 foot. You have advantage on Intelligence (Investigation) checks that rely on sight while searching an area or studying an object within that range.</p>
+        </div>
+
+        <div class="item">
+            <h3>Smouldering Jacket</h3>
+            <h4>40gp</h4>
+            <p>Wisps of harmless, odorless smoke rise from this jacket while it is worn. Made from tough but flexible leather, this leather jacket is reinforced with close-set rivets or spikes. Grants fire resistance to the wearer.</p>
+        </div>
+    </div>
+
+    <input type="checkbox" id="curios" />
+    <label for="curios">Curios</label>
+
+    <div class="content">
+        <div class="item">
+            <h3>Driftglobe</h3>
+            <h4>400gp</h4>
+            <p>This small sphere of thick glass weighs 1 pound. If you are within 60 feet of it, you can speak its command word and cause it to emanate the light or daylight spell. Once used, the daylight effect can't be used again until the next dawn.
+                <br>
+                You can speak another command word as an action to make the illuminated globe rise into the air and float no more than 5 feet off the ground. The globe hovers in this way until you or another creature grasps it. If you move more than 60 feet from the hovering globe, it follows you until it is within 60 feet of you. It takes the shortest route to do so. If prevented from moving, the globe sinks gently to the ground and becomes inactive, and its light winks out.</p>
+        </div>
+
+        <div class="item">
+            <h3>Pocket Spa</h3>
+            <h4>150gp</h4>
+            <p>A pocket-sized tent that inflates to normal size upon use (four people can fit within). Short rests taken within will grant an extra 1d8 HP</p>
+        </div>
+
+        <div class="item">
+            <h3>Cheerwine</h3>
+            <h4>10cp</h4>
+            <p>A normal can of cheerwine. It tastes of cherry and it tastes real fucking good</p>
+        </div>
+    </div>
+
+    <input type="checkbox" id="books" />
+    <label for="books">Books</label>
+
+    <div class="content">
+        <div class="item">
+            <h3>Eldritch Blast</h3>
+            <h4>25gp</h4>
+        </div>
+
+        <div class="item">
+            <h3>Minor Illusion</h3>
+            <h4>25gp</h4>
+        </div>
+
+
+        <div class="item">
+            <h3>Vicious Mockery</h3>
+            <h4>25gp</h4>
+        </div>
+
+
+
+        <div class="item">
+            <h3>Colour Spray</h3>
+            <h4>50gp</h4>
+        </div>
+
+
+        <div class="item">
+            <h3>Alarm</h3>
+            <h4>50gp</h4>
+        </div>
+
+        <div class="item">
+            <h3>Chromatic Orb</h3>
+            <h4>50gp</h4>
+        </div>
+
+        <div class="item">
+            <h3>Flame Blade</h3>
+            <h4>100gp</h4>
+        </div>
+
+        <div class="item">
+            <h3>Spiritual Weapon</h3>
+            <h4>100gp</h4>
+        </div>
+
+        <div class="item">
+            <h3>Levitate</h3>
+            <h4>100gp</h4>
+        </div>
+    </div>
+
+    <input type="checkbox" id="gifts" />
+    <label for="gifts">Gifts</label>
+
+    <div class="content">
+        <div class="item">
+            <h3>Haunted Doll</h3>
+            <h4>100gp</h4>
+            <p>This doll is very creepy</p>
+        </div>
+
+        <div class="item">
+            <h3>Physician's Pendant</h3>
+            <h4>150gp</h4>
+            <p>A gift for any doctor out there</p>
+        </div>
+
+        <div class="item">
+            <h3>Romsay's Fork</h3>
+            <h4>100gp</h4>
+            <p>A gift for any aspiring chef. No matter how badly you burn the food, it will always be edible if eaten with this fork.</p>
+        </div>
+    </div>
+</body>
+
+</html>
